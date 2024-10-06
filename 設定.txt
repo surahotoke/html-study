@@ -1,0 +1,65 @@
+{
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "emmet.triggerExpansionOnTab": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.useEditorConfig": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "emmet.variables": {
+    "lang": "ja"
+  }
+}
+
+
+{
+	"search":{
+		"prefix": "search",
+		"body": "<search>$1</search>"
+	},
+	"ruby":{
+		"prefix": "ruby",
+		"body": "<ruby>$1</ruby>"
+	},
+	"rt":{
+		"prefix": "rt",
+		"body": "<rt>$1</rt>"
+	},
+	"rp":{
+		"prefix": "rp",
+		"body": "<rp>$1</rp>"
+	},
+	"mark":{
+		"prefix": "mark",
+		"body": "<mark>$1</mark>"
+	},
+	"bdi":{
+		"prefix": "bdi",
+		"body": "<bdi>$1</bdi>"
+	},
+	"wbr":{
+		"prefix": "wbr",
+		"body": "<wbr>"
+	},
+	"track":{
+		"prefix": "track",
+		"body": "<track>"
+	},
+	"dialog":{
+		"prefix": "dialog",
+		"body": "<dialog>$1</dialog>"
+	},
+	"slot":{
+		"prefix": "slot",
+		"body": "<slot>$1</slot>"
+	},
+	"svg":{
+		"prefix": "svg",
+		"body": "<svg>$1</svg>"
+	},
+	"math":{
+		"prefix": "math",
+		"body": "<math>$1</math>"
+	},
+}

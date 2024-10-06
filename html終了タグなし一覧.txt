@@ -1,0 +1,13 @@
+base
+link
+meta
+hr
+br
+wbr
+source
+img
+embed
+track
+area
+col
+input
