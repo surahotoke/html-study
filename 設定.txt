@@ -1,16 +1,17 @@
 {
+  "git.autofetch": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "emmet.triggerExpansionOnTab": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.useEditorConfig": false,
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
+  "emmet.triggerExpansionOnTab": true,
   "emmet.variables": {
     "lang": "ja"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
   }
 }
+
 
 
 {
