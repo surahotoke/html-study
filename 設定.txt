@@ -63,4 +63,12 @@
 		"prefix": "math",
 		"body": "<math>$1</math>"
 	},
+	"link:favicon":{
+		"prefix": "link:favicon",
+		"body": "<link rel=\"icon\" href=\"favicon.svg\" type=\"image/svg+xml\">"
+	},
+	"link:touch":{
+		"prefix": "link:touch",
+		"body": "<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"apple-touch-icon.png\">"
+	}
 }
