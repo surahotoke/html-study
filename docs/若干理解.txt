@@ -4,3 +4,7 @@ title
 base
 link
 meta
+style
+body
+article
+section

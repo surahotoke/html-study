@@ -1,3 +1,9 @@
 body {
   background-color: darkgray;
 }
+section {
+  background-color: slateblue;
+}
+article {
+  background-color: skyblue;
+}
