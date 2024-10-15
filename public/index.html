@@ -19,67 +19,182 @@
 
 <body>
     <header>
-        <h1>全HTMLタグ学習</h1>
+        <a href="public/index.html"><img src="images/ハロウィンかぼちゃ.png" alt="ロゴ" height="60"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="public/index.html#mukashi">昔話</a>
+                    <ul class="submenu">
+                        <li><a href="public/index.html#momotaro">桃太郎</a></li>
+                        <li><a href="public/index.html#urashima">浦島太郎</a></li>
+                        <li><a href="public/index.html#kintaro">金太郎</a></li>
+                        <li><a href="public/index.html#kaguya">かぐや姫</a></li>
+                        <li><a href="public/index.html#issun">一寸法師</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="public/index.html#recipe">簡単レシピ</a>
+                    <ul class="submenu">
+                        <li><a href="public/index.html#morning">朝ごはん</a></li>
+                        <li><a href="public/index.html#noon">昼ごはん</a></li>
+                        <li><a href="public/index.html#night">晩ごはん</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section id="ki">
-            <h2>起</h2>
-            <article>
-                <h3>主人公の紹介</h3>
-                <p>物語の主人公は、小さな村に住む若者、タケルです。</p>
-                <p>タケルは冒険心旺盛で、未知の世界を探求することを夢見ています。</p>
+    <div class="container">
+        <main>
+            <h1>全HTMLタグ学習</h1>
+            <article id="mukashi">
+                <h2>昔話</h2>
+                <section id="momotaro">
+                    <h3>桃太郎</h3>
+                    <section>
+                        <h4>あらすじ</h4>
+                        <p>桃から生まれた桃太郎が、犬、猿、キジと一緒に鬼退治に行き、村に平和をもたらす話。</p>
+                    </section>
+                    <section>
+                        <h4>登場人物</h4>
+                        <ul>
+                            <li>桃太郎</li>
+                            <li>犬</li>
+                            <li>猿</li>
+                            <li>キジ</li>
+                            <li>鬼</li>
+                        </ul>
+                    </section>
+                </section>
+                <section id="urashima">
+                    <h3>浦島太郎</h3>
+                    <section>
+                        <h4>あらすじ</h4>
+                        <p>浦島太郎が亀を助け、竜宮城で楽しい時間を過ごすが、帰ると何百年も経っていたという話。</p>
+                    </section>
+                    <section>
+                        <h4>登場人物</h4>
+                        <ul>
+                            <li>浦島太郎</li>
+                            <li>亀</li>
+                            <li>乙姫</li>
+                        </ul>
+                    </section>
+                </section>
+                <section id="kintaro">
+                    <h3>金太郎</h3>
+                    <section>
+                        <h4>あらすじ</h4>
+                        <p>金太郎が動物たちと仲良くしながら、最終的に立派な武士になる話。</p>
+                    </section>
+                    <section>
+                        <h4>登場人物</h4>
+                        <ul>
+                            <li>金太郎</li>
+                            <li>動物たち</li>
+                            <li>源頼光</li>
+                        </ul>
+                    </section>
+                </section>
+                <section id="kaguya">
+                    <h3>かぐや姫</h3>
+                    <section>
+                        <h4>あらすじ</h4>
+                        <p>竹から生まれたかぐや姫が、求婚者を断り、月に帰ってしまう話。</p>
+                    </section>
+                    <section>
+                        <h4>登場人物</h4>
+                        <ul>
+                            <li>かぐや姫</li>
+                            <li>竹取の翁（おきな）</li>
+                            <li>求婚者たち</li>
+                        </ul>
+                    </section>
+                </section>
+                <section id="issun">
+                    <h3>一寸法師</h3>
+                    <section>
+                        <h4>あらすじ</h4>
+                        <p>小さい一寸法師が冒険し、魔法の槌で大きくなって活躍する話。</p>
+                    </section>
+                    <section>
+                        <h4>登場人物</h4>
+                        <ul>
+                            <li>一寸法師</li>
+                            <li>お姫様</li>
+                            <li>鬼</li>
+                        </ul>
+                    </section>
+                </section>
             </article>
-            <article>
-                <h3>村の不安</h3>
-                <p>村には、最近怪物が現れるという噂が広がり、村人たちは不安を感じていました。</p>
-                <p>タケルは、その真相を探ることを決意します。</p>
-            </article>
-        </section>
+            <article id="recipe">
+                <h2>簡単レシピ</h2>
+                <section id="morning">
+                    <h3>朝ごはん</h3>
+                    <h4>オムレツの作り方</h4>
+                    <h5>材料</h5>
+                    <p>卵、牛乳、塩</p>
 
-        <section id="shou">
-            <h2>承</h2>
-            <article>
-                <h3>冒険の始まり</h3>
-                <p>タケルは、友達のサクラと一緒に、山を越えて旅に出ることにしました。</p>
-                <p>途中、彼らは不思議な生き物や美しい風景に出会います。</p>
-            </article>
-            <article>
-                <h3>怪物との遭遇</h3>
-                <p>ある夜、キャンプをしていると、突如として怪物が現れました。</p>
-                <p>タケルは勇気を振り絞って立ち向かいますが、怪物は強力でした。</p>
-            </article>
-        </section>
+                    <h6>おすすめのトッピング</h6>
+                    <ul>
+                        <li>ハム</li>
+                        <li>チーズ</li>
+                        <li>パセリ</li>
+                    </ul>
+                </section>
+                <section id="noon">
+                    <h3>昼ごはん</h3>
+                    <h4>パスタのレシピ</h4>
+                    <h5>材料</h5>
+                    <p>パスタ、オリーブオイル、ニンニク</p>
 
-        <section id="ten">
-            <h2>転</h2>
+                    <h6>トッピングのアイデア</h6>
+                    <ul>
+                        <li>トマト</li>
+                        <li>バジル</li>
+                        <li>チーズ</li>
+                    </ul>
+                </section>
+                <section id="night">
+                    <h3>晩ごはん</h3>
+                    <hgroup>
+                        <h4>スパイシーなカレーの煮込み</h4>
+                        <h5>~季節の野菜と共に~</h5>
+                    </hgroup>
+                    <h5>材料</h5>
+                    <p>鶏肉、玉ねぎ、にんじん、じゃがいも、カレールー</p>
+                    <h6>おすすめのトッピング</h6>
+                    <ol>
+                        <li>ヨーグルト</li>
+                        <li>パクチー</li>
+                        <li>揚げナス</li>
+                    </ol>
+                </section>
+            </article>
+        </main>
+        <aside>
             <article>
-                <h3>新たな仲間</h3>
-                <p>ピンチの時に、謎の魔法使いが現れ、タケルを助けてくれました。</p>
-                <p>彼は、「私と一緒に旅をすれば、怪物を倒す力を授けてあげる」と言います。</p>
+                <h2>最近のアニメ</h2>
+                <ul>
+                    <li><a href="https://example.com/kimetsu">鬼滅の刃</a> - 鬼と戦う少年たちの物語。</li>
+                    <li><a href="https://example.com/jujutsu">呪術廻戦</a> - 呪霊と戦う高校生たちの冒険。</li>
+                    <li><a href="https://example.com/spy">スパイファミリー</a> - スパイと暗殺者、そして子どもの家族物語。</li>
+                    <li><a href="https://example.com/attack">進撃の巨人</a> - 巨人と人類の壮絶な戦い。</li>
+                </ul>
             </article>
             <article>
-                <h3>試練と成長</h3>
-                <p>タケルは魔法使いの元で特訓を受け、次第に力をつけていきます。</p>
-                <p>彼は、仲間たちと絆を深めながら成長していきます。</p>
+                <h2>最近のゲーム</h2>
+                <ul>
+                    <li><a href="https://example.com/zeldas">ゼルダの伝説：ティアーズ オブ ザ キングダム</a> - 壮大な冒険が待っている！</li>
+                    <li><a href="https://example.com/ff16">ファイナルファンタジーXVI</a> - 魅力的なストーリーと美麗なグラフィック。</li>
+                    <li><a href="https://example.com/pokemon">ポケットモンスター スカーレット・バイオレット</a> - 新たなポケモンの世界を探求しよう。</li>
+                    <li><a href="https://example.com/starfield">スターフィールド</a> - 宇宙を舞台にした大冒険！</li>
+                </ul>
             </article>
-        </section>
-
-        <section id="ketsu">
-            <h2>結</h2>
-            <article>
-                <h3>決戦の時</h3>
-                <p>タケルと仲間たちは、ついに怪物の巣へ乗り込む決意を固めました。</p>
-                <p>激しい戦闘の末、タケルは怪物を見事に打ち倒します。</p>
-            </article>
-            <article>
-                <h3>村への帰還</h3>
-                <p>タケルは村に戻り、村人たちに歓迎されます。</p>
-                <p>彼の冒険は、多くの人に勇気と希望を与えました。</p>
-            </article>
-        </section>
-    </main>
-    <img src="images/ハロウィンかぼちゃ.png" alt="ハロウィンかぼちゃ">
-    <footer></footer>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2024 全HTMLタグ学習. All rights reserved.</p>
+    </footer>
     <script src="public/script.js"></script>
 </body>
 

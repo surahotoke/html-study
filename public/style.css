@@ -1,9 +1,87 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
+  margin: 0;
   background-color: darkgray;
 }
 section {
   background-color: slateblue;
 }
-article {
+main article {
   background-color: skyblue;
+  scroll-margin-top: 70px;
+}
+main section {
+  scroll-margin-top: 70px;
+}
+header {
+  background-color: #f0f0f0;
+  position: sticky;
+  top: 0;
+  display: flex;
+}
+h1 {
+  margin: 0;
+}
+nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  margin: 0;
+  padding-left: 0;
+}
+nav li {
+  display: inline-block;
+  padding-right: 20px;
+}
+nav a {
+  text-decoration: none;
+}
+.submenu {
+  background-color: chocolate;
+  padding-left: 0;
+  display: none;
+  position: absolute;
+  padding: 5px;
+  border-radius: 10px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+li:hover .submenu {
+  display: block;
+}
+.submenu li {
+  display: block;
+  padding: 3px;
+  margin-bottom: 5px;
+  transition: background-color 0.5s ease-out;
+  border-radius: 5px;
+}
+.submenu li:hover {
+  background-color: aquamarine;
+}
+.container {
+  display: flex;
+}
+main {
+  background-color: blanchedalmond;
+  flex: 3;
+  margin: 20px;
+  padding: 1px;
+}
+aside {
+  flex: 1;
+}
+aside article {
+  background-color: bisque;
+  margin: 20px;
+  padding: 1px;
+}
+footer {
+  background-color: aqua;
 }
