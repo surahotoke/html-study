@@ -18,6 +18,11 @@
 </head>
 
 <body>
+    <menu id="context-menu" type="context">
+        <li><button onclick="copy()">コピー</button></li>
+        <li><button onclick="cut()">切り取り</button></li>
+        <li><button onclick="paste()">貼り付け</button></li>
+    </menu>
     <header>
         <a href="public/index.html"><img src="images/ハロウィンかぼちゃ.png" alt="ロゴ" height="60"></a>
         <nav>
@@ -46,6 +51,7 @@
                         <li><a href="public/index.html#pumpkin">パンプキン</a></li>
                     </ul>
                 </li>
+                <li><a href="public/index.html#meigen">名言・迷言集</a></li>
             </ul>
         </nav>
     </header>
@@ -216,6 +222,17 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
                     </figure>
                 </section>
             </article>
+            <article id="meigen">
+                <h2>名言・迷言集</h2>
+                <blockquote cite="https://x.com/shinjirokoiz">
+                    <p>今のままではいけないと思います。だからこそ、日本は今のままではいけないと思っている。</p>
+                    <footer>— 小泉進次郎 <cite><a href="https://x.com/shinjirokoiz">出典</a></cite></footer>
+                </blockquote>
+                <blockquote cite="https://x.com/hirox246">
+                    <p>好きなものは好き。だって好きだから。</p>
+                    <footer>— ひろゆき <cite><a href="https://x.com/hirox246">出典</a></cite></footer>
+                </blockquote>
+            </article>
         </main>
         <aside>
             <article>
@@ -250,7 +267,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
         </div>
         <address>
             <p>中井 拓人</p>
-            <p>Email: <a href="takutoyakke@gmail.com">takutoyakke@gmail.com</a></p>
+            <p>Email: <a href="mailto:takutoyakke@gmail.com">takutoyakke@gmail.com</a></p>
         </address>
     </footer>
     <script src="public/script.js"></script>

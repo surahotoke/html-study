@@ -23,3 +23,8 @@ address
 p
 hr
 pre
+blockquote
+ol
+ul
+menu
+li

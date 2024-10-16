@@ -5,6 +5,14 @@ body {
   margin: 0;
   background-color: darkgray;
 }
+menu {
+  position: absolute;
+  display: none;
+  background-color: gainsboro;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
 header {
   background-color: #f0f0f0;
   position: sticky;
@@ -90,7 +98,9 @@ pre {
   background-color: white;
   display: inline-block;
 }
-
+blockquote {
+  background-color: whitesmoke;
+}
 aside {
   flex: 1;
 }
