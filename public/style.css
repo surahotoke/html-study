@@ -5,31 +5,17 @@ body {
   margin: 0;
   background-color: darkgray;
 }
-section {
-  background-color: slateblue;
-}
-main article {
-  background-color: skyblue;
-  scroll-margin-top: 70px;
-}
-main section {
-  scroll-margin-top: 70px;
-}
 header {
   background-color: #f0f0f0;
   position: sticky;
   top: 0;
   display: flex;
 }
-h1 {
-  margin: 0;
-}
 nav {
   margin-left: auto;
   display: flex;
   align-items: center;
 }
-
 nav ul {
   margin: 0;
   padding-left: 0;
@@ -65,23 +51,58 @@ li:hover .submenu {
 .submenu li:hover {
   background-color: aquamarine;
 }
+main,
+article,
+section,
+footer {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
 .container {
   display: flex;
 }
 main {
-  background-color: blanchedalmond;
+  background-color: bisque;
   flex: 3;
-  margin: 20px;
-  padding: 1px;
+  margin: 10px;
 }
+main article {
+  scroll-margin-top: 70px;
+  background-color: skyblue;
+}
+main section {
+  scroll-margin-top: 70px;
+  background-color: slateblue;
+}
+hr {
+  border-color: darkblue;
+}
+hgroup {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: end;
+}
+.food {
+  background-color: aliceblue;
+}
+pre {
+  background-color: white;
+  display: inline-block;
+}
+
 aside {
   flex: 1;
 }
 aside article {
   background-color: bisque;
-  margin: 20px;
-  padding: 1px;
+  margin: 10px;
 }
 footer {
-  background-color: aqua;
+  background-color: bisque;
+  margin: 10px;
+}
+#social {
+  display: flex;
+  align-items: center;
 }

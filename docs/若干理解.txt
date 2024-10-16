@@ -21,3 +21,5 @@ header
 footer
 address
 p
+hr
+pre

@@ -1,5 +1,3 @@
-hr
-pre
 blockquote
 ol
 ul
