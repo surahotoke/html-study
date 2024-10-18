@@ -43,3 +43,8 @@ small
 s
 cite
 q
+dfn
+abbr
+ruby
+rt
+rp
