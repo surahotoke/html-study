@@ -1,6 +1,3 @@
-s
-cite
-q
 dfn
 abbr
 ruby
