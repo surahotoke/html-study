@@ -105,3 +105,7 @@ function highlightTags() {
     alert(`タグ <${tagName}> は見つかりませんでした。`);
   }
 }
+
+function add_shop() {
+  window.open("https://example.com/magic_book", "_blank");
+}
