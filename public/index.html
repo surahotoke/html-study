@@ -27,6 +27,7 @@
         <a href="public/index.html"><img src="images/ハロウィンかぼちゃ.png" alt="ロゴ" height="60"></a>
         <nav>
             <ul>
+                <li><a href="public/index.html#weblang">ウェブの言語</a></li>
                 <li>
                     <a href="public/index.html#mukashi">昔話</a>
                     <ul class="submenu">
@@ -52,23 +53,50 @@
                     </ul>
                 </li>
                 <li><a href="public/index.html#meigen">名言・迷言集</a></li>
+                <li>
+                    <a href="public/index.html#mystery">消えた宝石の謎（ミステリー）</a>
+                    <ul class="submenu">
+                        <li><a href="public/index.html#part-one">第一部</a></li>
+                        <li><a href="public/index.html#part-two">第二部</a></li>
+                        <li><a href="public/index.html#part-three">第三部</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
+        <search>
+            <label for="tag-search">検索したタグを光らせます</label>
+            <input type="text" id="tag-search" placeholder="タグ名を入力して検索...">
+            <button onclick="highlightTags()">検索</button>
+        </search>
     </header>
     <div class="container">
         <main>
             <h1>全HTMLタグ学習</h1>
+            <article id="weblang">
+                <h2>ウェブを作る3つの柱</h2>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>ウェブページを作るためのマークアップ言語</dd>
+
+                    <dt>CSS</dt>
+                    <dd>ウェブページの見た目を整えるスタイルシート言語</dd>
+
+                    <dt>JavaScript</dt>
+                    <dd>ウェブページに動きを加えるプログラミング言語</dd>
+                </dl>
+            </article>
+
             <article id="mukashi">
                 <h2>昔話</h2>
                 <section id="momotaro">
                     <h3>桃太郎</h3>
                     <section>
                         <h4>あらすじ</h4>
-                        <p>桃から生まれた桃太郎が、犬、猿、キジと一緒に鬼退治に行き、村に平和をもたらす話。</p>
+                        <p>桃から生まれた<strong>桃太郎</strong>が、犬、猿、キジと一緒に鬼退治に行き、村に平和をもたらす話。</p>
                         <hr>
                         <h4>登場人物</h4>
                         <ul>
-                            <li>桃太郎</li>
+                            <li>桃太郎（主人公）</li>
                             <li>犬</li>
                             <li>猿</li>
                             <li>キジ</li>
@@ -80,11 +108,11 @@
                     <h3>浦島太郎</h3>
                     <section>
                         <h4>あらすじ</h4>
-                        <p>浦島太郎が亀を助け、竜宮城で楽しい時間を過ごすが、帰ると何百年も経っていたという話。</p>
+                        <p><strong>浦島太郎</strong>が亀を助け、竜宮城で楽しい時間を過ごすが、帰ると何百年も経っていたという話。</p>
                         <hr>
                         <h4>登場人物</h4>
                         <ul>
-                            <li>浦島太郎</li>
+                            <li>浦島太郎（主人公）</li>
                             <li>亀</li>
                             <li>乙姫</li>
                         </ul>
@@ -94,11 +122,11 @@
                     <h3>金太郎</h3>
                     <section>
                         <h4>あらすじ</h4>
-                        <p>金太郎が動物たちと仲良くしながら、最終的に立派な武士になる話。</p>
+                        <p><strong>金太郎</strong>が動物たちと仲良くしながら、最終的に立派な武士になる話。</p>
                         <hr>
                         <h4>登場人物</h4>
                         <ul>
-                            <li>金太郎</li>
+                            <li>金太郎（主人公）</li>
                             <li>動物たち</li>
                             <li>源頼光</li>
                         </ul>
@@ -108,11 +136,11 @@
                     <h3>かぐや姫</h3>
                     <section>
                         <h4>あらすじ</h4>
-                        <p>竹から生まれたかぐや姫が、求婚者を断り、月に帰ってしまう話。</p>
+                        <p>竹から生まれた<strong>かぐや姫</strong>が、求婚者を断り、月に帰ってしまう話。</p>
                         <hr>
                         <h4>登場人物</h4>
                         <ul>
-                            <li>かぐや姫</li>
+                            <li>かぐや姫（主人公）</li>
                             <li>竹取の翁（おきな）</li>
                             <li>求婚者たち</li>
                         </ul>
@@ -122,11 +150,11 @@
                     <h3>一寸法師</h3>
                     <section>
                         <h4>あらすじ</h4>
-                        <p>小さい一寸法師が冒険し、魔法の槌で大きくなって活躍する話。</p>
+                        <p>小さい<strong>一寸法師</strong>が冒険し、魔法の槌で大きくなって活躍する話。</p>
                         <hr>
                         <h4>登場人物</h4>
                         <ul>
-                            <li>一寸法師</li>
+                            <li>一寸法師（主人公）</li>
                             <li>お姫様</li>
                             <li>鬼</li>
                         </ul>
@@ -226,32 +254,116 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
                 <h2>名言・迷言集</h2>
                 <blockquote cite="https://x.com/shinjirokoiz">
                     <p>今のままではいけないと思います。だからこそ、日本は今のままではいけないと思っている。</p>
-                    <footer>— 小泉進次郎 <cite><a href="https://x.com/shinjirokoiz">出典</a></cite></footer>
+                    <footer>— 小泉進次郎 <cite><a href="https://x.com/shinjirokoiz" target="_blank">出典</a></cite></footer>
                 </blockquote>
                 <blockquote cite="https://x.com/hirox246">
                     <p>好きなものは好き。だって好きだから。</p>
-                    <footer>— ひろゆき <cite><a href="https://x.com/hirox246">出典</a></cite></footer>
+                    <footer>— ひろゆき <cite><a href="https://x.com/hirox246" target="_blank">出典</a></cite></footer>
                 </blockquote>
+            </article>
+            <article id="mystery">
+                <h2>消えた宝石の謎（ミステリー）</h2>
+                <section id="part-one">
+                    <h3>第一部</h3>
+                    <p>ある晩、名探偵の<em>佐藤</em>は豪邸に招待された。この家には、<strong>貴族の宝石</strong>が秘蔵されていた。</p><br>
+                    <p>パーティーが始まると、参加者たちは次々と宝石を見せ合い、笑い声が響いた。しかし、<em>午前零時</em>、家主が驚愕の表情で叫んだ。</p>
+                    <p>「<strong>宝石が消えた！</strong>」</p>
+                    <hr>
+                    <p>佐藤はすぐに現場を調査し始めた。彼は各部屋を見て回り、目撃者たちに話を聞いた。すると、<em>一人の客</em>が不自然な行動をしていたことに気づく。<br>
+                        その客は、何度もトイレに行き、戻るたびに<em>怪しい笑み</em>を浮かべていた。</p><br>
+                    <p>「私がトイレに行っている間に、何が起きたのですか？」と佐藤は問い詰めた。</p>
+                    <p>「私は何も知りません。あなたの勝手な推測です！」と客は反発した。</p>
+                    <hr>
+                    <p>しかし、佐藤はこの瞬間、彼の目に奇妙な光景が映った。</p>
+                    <p><strong>トイレの窓に何かが輝いている。</strong></p><br>
+                    <p>果たして、佐藤はこの謎を解き明かすことができるのか？真実が明らかになるまで、<em>注意が必要だ。</em></p>
+                </section>
+                <section id="part-two">
+                    <h3>第二部</h3>
+                    <p>佐藤は急いでトイレの窓に近づいた。そこには、<strong>金色の輝き</strong>があった。よく見ると、それは失われた<strong>宝石の一部</strong>だった。</p><br>
+                    <p>「誰かが外に逃げたのか？」と佐藤は心の中で思った。彼はすぐに家主に知らせ、パーティー参加者全員を集めた。</p>
+                    <hr>
+                    <p>「この宝石が見つかりました。<strong>誰がこの窓から出たか</strong>、誰か見ていた人はいませんか？」と佐藤が尋ねると、参加者たちは互いに顔を見合わせた。</p>
+                    <p>すると、<em>先ほどの怪しい客</em>が一歩前に出た。</p>
+                    <p>「私がトイレに行っていた間に、他の誰かが出て行ったのかもしれません」と、彼は言った。</p><br>
+                    <p>佐藤はその言葉に耳を傾けながらも、彼の動きに<em>疑念</em>を抱いた。</p>
+                    <hr>
+                    <p>その時、別の参加者が叫んだ。</p>
+                    <p>「見て！彼のポケットから何かが見える！」</p><br>
+                    <p>客は驚いた様子で手をポケットに入れようとしたが、佐藤はすかさず彼を止めた。</p>
+                    <p>「<strong>見せてもらいます。</strong>」</p><br>
+                    <p>客は仕方なくポケットを探り、そこから小さな金属の箱を取り出した。</p>
+                    <hr>
+                    <p>「これは…？」と佐藤はその箱をじっと見つめた。箱を開けると、中には小さな<strong>宝石</strong>が入っていた。</p>
+                    <p>「この宝石は、失われた<strong>宝石の一部</strong>ではないか？」</p><br>
+                    <p>再び緊張が走った。参加者たちは彼を囲み、<strong>疑念の目</strong>を向けた。</p>
+                </section>
+                <section id="part-three">
+                    <h3>第三部</h3>
+                    <p>佐藤はその小さな<strong>宝石</strong>を手に取り、詳しく観察した。</p><br>
+                    <p>「これは間違いなく、<strong>貴族の宝石の一部</strong>です。あなたがこれを持っていた理由は何ですか？」と彼は<em>怪しい客</em>に問いかけた。</p>
+                    <hr>
+                    <p>客は一瞬、<em>恐れ</em>を見せたが、すぐに冷静さを取り戻した。</p>
+                    <p>「私は何もしていない。ただの偶然です。」</p><br>
+                    <p>しかし、佐藤はその言葉を信じなかった。</p>
+                    <p>「あなたがトイレに行っている間、他の人たちも目撃している。さらに、あなたがこの<strong>宝石</strong>を持っていたのは明らかに不自然です。」</p>
+                    <hr>
+                    <p>参加者の中から一人、<em>目撃者</em>が立ち上がった。</p>
+                    <p>「私が見たのは、彼がトイレに入る前に何かを隠すような動作をしていたことです。」</p><br>
+                    <p>佐藤はその言葉を受けて、すべての証拠をまとめ、客に迫った。</p>
+                    <p>「あなたが宝石を隠したのは間違いありません。さあ、<strong>真実を話しなさい。</strong>」</p>
+                    <hr>
+                    <p>客はため息をつき、ついに口を開いた。</p>
+                    <p>「私はお金が必要だった。これを売れば、私の問題はすぐに解決すると思った。」</p><br>
+                    <p>参加者たちは彼の告白に驚き、さらに<strong>怒り</strong>を覚えた。</p>
+                    <hr>
+                    <p>「この場から出て行け！」と家主が叫んだ。</p>
+                    <p>佐藤は警察を呼び、客はその場から連行された。</p><br>
+                    <p>こうして、失われた<strong>宝石</strong>は無事に戻り、佐藤の名探偵としての名声が再び高まった。</p>
+                    <p>果たして、真実はいつも明らかになる。人々は<em>注意深く</em>行動しなければならない。</p><br>
+                    <p><em>これで一件落着。</em></p>
+                </section>
             </article>
         </main>
         <aside>
             <article>
                 <h2>最近のアニメ</h2>
                 <ul>
-                    <li><a href="https://example.com/kimetsu">鬼滅の刃</a> - 鬼と戦う少年たちの物語。</li>
-                    <li><a href="https://example.com/jujutsu">呪術廻戦</a> - 呪霊と戦う高校生たちの冒険。</li>
-                    <li><a href="https://example.com/spy">スパイファミリー</a> - スパイと暗殺者、そして子どもの家族物語。</li>
-                    <li><a href="https://example.com/attack">進撃の巨人</a> - 巨人と人類の壮絶な戦い。</li>
+                    <li><a href="https://example.com/kimetsu" target="_blank">鬼滅の刃</a> - 鬼と戦う少年たちの物語。</li>
+                    <li><a href="https://example.com/jujutsu" target="_blank">呪術廻戦</a> - 呪霊と戦う高校生たちの冒険。</li>
+                    <li><a href="https://example.com/spy" target="_blank">スパイファミリー</a> - スパイと暗殺者、そして子どもの家族物語。</li>
+                    <li><a href="https://example.com/attack" target="_blank">進撃の巨人</a> - 巨人と人類の壮絶な戦い。</li>
                 </ul>
             </article>
             <article>
                 <h2>最近のゲーム</h2>
                 <ul>
-                    <li><a href="https://example.com/zeldas">ゼルダの伝説：ティアーズ オブ ザ キングダム</a> - 壮大な冒険が待っている！</li>
-                    <li><a href="https://example.com/ff16">ファイナルファンタジーXVI</a> - 魅力的なストーリーと美麗なグラフィック。</li>
-                    <li><a href="https://example.com/pokemon">ポケットモンスター スカーレット・バイオレット</a> - 新たなポケモンの世界を探求しよう。</li>
-                    <li><a href="https://example.com/starfield">スターフィールド</a> - 宇宙を舞台にした大冒険！</li>
+                    <li><a href="https://example.com/zeldas" target="_blank">ゼルダの伝説：ティアーズ オブ ザ キングダム</a> - 壮大な冒険が待っている！
+                    </li>
+                    <li><a href="https://example.com/ff16" target="_blank">ファイナルファンタジーXVI</a> - 魅力的なストーリーと美麗なグラフィック。
+                    </li>
+                    <li><a href="https://example.com/pokemon" target="_blank">ポケットモンスター スカーレット・バイオレット</a> -
+                        新たなポケモンの世界を探求しよう。</li>
+                    <li><a href="https://example.com/starfield" target="_blank">スターフィールド</a> - 宇宙を舞台にした大冒険！</li>
                 </ul>
+            </article>
+            <article>
+                <h2>魔法のレシピブック</h2>
+                <p>このブックは、特別な魔法のレシピが収録された、あなたの料理の腕を一段階引き上げるための一冊！どんな料理も魔法のように美味しく仕上げられる秘密が満載だよ。</p>
+                <section>
+                    <h3>今だけ特別セール！</h3>
+                    <p>「魔法のレシピブック」を特別価格で提供中！<small>（数量限定）</small></p>
+                    <p>お支払いはクレジットカードのみです。<small>（手数料がかかる場合があります）</small></p>
+                    <button>今すぐ購入！</button>
+                </section>
+                <section>
+                    <h3>特徴</h3>
+                    <ul>
+                        <li>50種類の魔法レシピ：前菜からデザートまで、多彩な料理が楽しめるよ！</li>
+                        <li>魔法のハーブ付き：特別なハーブを使ったレシピも紹介してるよ。</li>
+                        <li>初心者向けガイド：料理が苦手でも安心、ステップバイステップで解説。</li>
+                    </ul>
+                </section>
             </article>
         </aside>
     </div>
@@ -260,9 +372,9 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
         <div id="social">
             <p>ソーシャルメディア:</p>
             <ul>
-                <li><a href="https://github.com/surahotoke">GitHub</a></li>
-                <li><a href="https://qiita.com/surahotoke">Qiita</a></li>
-                <li><a href="https://surahotoke.github.io/portfolio/">Website（更新してない）</a></li>
+                <li><a href="https://github.com/surahotoke" target="_blank">GitHub</a></li>
+                <li><a href="https://qiita.com/surahotoke" target="_blank">Qiita</a></li>
+                <li><a href="https://surahotoke.github.io/portfolio/" target="_blank">Website（更新してない）</a></li>
             </ul>
         </div>
         <address>

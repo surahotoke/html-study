@@ -12,6 +12,7 @@ menu {
   border: 2px solid black;
   border-radius: 10px;
   padding: 10px;
+  z-index: 1000;
 }
 header {
   background-color: #f0f0f0;
@@ -59,6 +60,10 @@ li:hover .submenu {
 .submenu li:hover {
   background-color: aquamarine;
 }
+search {
+  padding: 10px;
+}
+
 main,
 article,
 section,

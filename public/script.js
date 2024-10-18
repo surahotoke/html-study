@@ -5,7 +5,11 @@ let selectedText = ""; // コピーしたテキストを保存
 // クリックした要素を選択する関数
 document.querySelectorAll("*").forEach((element) => {
   element.addEventListener("click", function (event) {
-    if (event.target.closest("#context-menu")) return;
+    if (
+      event.target.closest("#context-menu") ||
+      event.target.closest("header a")
+    )
+      return;
     event.stopPropagation(); // イベントのバブリングを防ぐ
     selectedElement = this; // クリックした要素を保存
     if (this.tagName === "INPUT" || this.tagName === "TEXTAREA") {
@@ -79,5 +83,25 @@ function paste() {
     });
   } else {
     alert("要素を選択してください！");
+  }
+}
+
+let previousElements = [];
+function highlightTags() {
+  previousElements.forEach((element) => {
+    element.style.backgroundColor = "";
+  });
+  previousElements = [];
+  const tagName = document.getElementById("tag-search").value;
+  if (tagName === "") {
+    return;
+  }
+  const elements = document.getElementsByTagName(tagName);
+  for (const element of elements) {
+    previousElements.push(element);
+    element.style.backgroundColor = "yellow";
+  }
+  if (elements.length === 0) {
+    alert(`タグ <${tagName}> は見つかりませんでした。`);
   }
 }

@@ -28,3 +28,15 @@ ol
 ul
 menu
 li
+dl
+dt
+dd
+figure
+figcaption
+main
+search
+div
+a
+em
+strong
+small
