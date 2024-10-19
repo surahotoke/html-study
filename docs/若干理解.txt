@@ -62,3 +62,5 @@ u
 mark
 bdi
 bdo
+span
+br

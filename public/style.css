@@ -125,3 +125,18 @@ code {
   white-space: break-spaces;
   overflow-wrap: anywhere;
 }
+
+.rainbow {
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  background-clip: text;
+  color: transparent;
+}
