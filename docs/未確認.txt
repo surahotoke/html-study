@@ -1,5 +1,3 @@
-code
-var
 samp
 kbd
 sub
