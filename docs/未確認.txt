@@ -1,5 +1,3 @@
-bdi
-bdo
 span
 br
 wbr
