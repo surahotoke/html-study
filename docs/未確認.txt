@@ -1,11 +1,3 @@
-samp
-kbd
-sub
-sup
-i
-b
-u
-mark
 bdi
 bdo
 span

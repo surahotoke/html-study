@@ -52,3 +52,11 @@ data
 time
 code
 var
+samp
+kbd
+sub
+sup
+i
+b
+u
+mark
