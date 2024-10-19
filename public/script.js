@@ -109,3 +109,44 @@ function highlightTags() {
 function add_shop() {
   window.open("https://example.com/magic_book", "_blank");
 }
+fetch("public/index.html")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    return response.text();
+  })
+  .then((data) => {
+    document.getElementById("myself-html").textContent = data;
+  })
+  .catch((error) => {
+    console.error("Error fetching the script:", error);
+  });
+
+fetch("public/style.css")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    return response.text();
+  })
+  .then((data) => {
+    document.getElementById("myself-css").textContent = data;
+  })
+  .catch((error) => {
+    console.error("Error fetching the script:", error);
+  });
+
+fetch("public/script.js")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    return response.text();
+  })
+  .then((data) => {
+    document.getElementById("myself-javascript").textContent = data;
+  })
+  .catch((error) => {
+    console.error("Error fetching the script:", error);
+  });

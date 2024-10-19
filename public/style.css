@@ -121,3 +121,7 @@ footer {
   display: flex;
   align-items: center;
 }
+code {
+  white-space: break-spaces;
+  overflow-wrap: anywhere;
+}
