@@ -1,5 +1,3 @@
-ins
-del
 picture
 source
 img

@@ -65,3 +65,5 @@ bdo
 span
 br
 wbr
+ins
+del
