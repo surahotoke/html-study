@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  word-break: auto-phrase;
 }
 body {
   margin: 0;
@@ -139,4 +140,13 @@ code {
   );
   background-clip: text;
   color: transparent;
+}
+ul,
+ol {
+  padding-left: 1.4em;
+}
+
+#resizerable-text {
+  background-color: aquamarine;
+  white-space: nowrap;
 }

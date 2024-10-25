@@ -68,6 +68,7 @@
                         <li><a href="public/index.html#js">JavaScript</a></li>
                     </ul>
                 </li>
+                <li><a href="public/index.html#tateyomi">縦読み</a></li>
             </ul>
         </nav>
         <search>
@@ -219,7 +220,8 @@
             </article>
             <article id="ascii">
                 <h2><abbr title="American Standard Code for Information Interchange">ASCII</abbr>アート</h2>
-                <p><dfn>ASCIIアート</dfn>は、文字や記号だけを使って絵やデザインを作るアートのことだよ。パソコンのキーボードにある「<mark>ASCII（American Standard Codefor
+                <p><dfn>ASCIIアート</dfn>は、文字や記号だけを使って絵やデザインを作るアートのことだよ。パソコンのキーボードにある「<mark>ASCII（American
+                        Standard Codefor
                         InformationInterchange）</mark>」っていう文字コードを使って表現されてるの。特に昔のコンピュータでは、<mark><i>グラフィックス</i></mark>を表示するのが難しかったから、文字だけでこういうアートを作ってたんだ。
                 </p>
                 <section id="pumpkin">
@@ -403,27 +405,52 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
                     <pre><code id="myself-javascript"></code></pre>
                 </section>
             </article>
+            <article id="tateyomi">
+                <h2>27emに設定してみよう！</h2>
+                <label for="w">w[em]：</label>
+                <input type="number" id="w" placeholder="横幅を入力" min="20" max="55" value="55" step="7">
+                <button id="resizeBtn">サイズ変更</button>
+                <p id="resizerable-text" style="width: 55em; font-size: 1.2vw;">
+                    こんにちは！<wbr>素敵なサプライズパーティーですね。<wbr>この部屋に入った瞬間、<wbr>みんなが笑顔で飛び出してきた。<wbr>はじめは何が起こったのか分からなくて、<wbr>どきどきしたけれど、<wbr>見渡すと親友たちが<wbr>集まっていた。<wbr>この誕生日は<wbr>一生忘れられない<wbr>思い出になりそう。<wbr>わくわくしながら<wbr>ケーキのロウソクを<wbr>見つめる。<wbr>たくさんの人に囲ま<wbr>れて幸せな気持ち。<wbr>しばらくして写真撮影が<wbr>始まって、<wbr>はしゃぎすぎて珍しい顔に<wbr>なってしまった。<wbr>だけど、そんなことも<wbr>楽しい思い出。<wbr>れいんぼーカラーの風船に<wbr>囲まれて、最高の一日になった。
+                </p>
+            </article>
         </main>
         <aside>
             <article>
                 <h2>最近のアニメ</h2>
                 <ul>
-                    <li><a href="https://example.com/kimetsu" target="_blank">鬼滅の刃</a> - 鬼と戦う少年たちの物語。</li>
-                    <li><a href="https://example.com/jujutsu" target="_blank">呪術廻戦</a> - 呪霊と戦う高校生たちの冒険。</li>
-                    <li><a href="https://example.com/spy" target="_blank">スパイファミリー</a> - スパイと暗殺者、そして子どもの家族物語。</li>
-                    <li><a href="https://example.com/attack" target="_blank">進撃の巨人</a> - 巨人と人類の壮絶な戦い。</li>
+                    <li><a href="https://example.com/kimetsu" target="_blank">鬼滅の刃</a>
+                        - 鬼と戦う少年たちの物語。
+                    </li>
+                    <li><a href="https://example.com/jujutsu" target="_blank">呪術廻戦</a>
+                        - 呪霊と戦う高校生たちの冒険。
+                    </li>
+                    <li><a href="https://example.com/spy" target="_blank">スパイファミリー</a>
+                        - スパイと暗殺者、そして子どもの家族物語。
+                    </li>
+                    <li><a href="https://example.com/attack" target="_blank">進撃の巨人</a>
+                        - 巨人と人類の壮絶な戦い。
+                    </li>
                 </ul>
             </article>
             <article>
                 <h2>最近のゲーム</h2>
                 <ul>
-                    <li><a href="https://example.com/zeldas" target="_blank">ゼルダの伝説：ティアーズ オブ ザ キングダム</a> - 壮大な冒険が待っている！
+                    <li><a href="https://example.com/zeldas" target="_blank">ゼルダの伝説：ティアーズ オブ ザ
+                            キングダム</a>
+                        - 壮大な冒険が待っている！
                     </li>
-                    <li><a href="https://example.com/ff16" target="_blank">ファイナルファンタジーXVI</a> - 魅力的なストーリーと美麗なグラフィック。
+                    <li><a href="https://example.com/ff16" target="_blank">ファイナルファンタジーXVI</a>
+                        - 魅力的なストーリーと美麗なグラフィック。
                     </li>
-                    <li><a href="https://example.com/pokemon" target="_blank">ポケットモンスター スカーレット・バイオレット</a> -
-                        新たなポケモンの世界を探求しよう。</li>
-                    <li><a href="https://example.com/starfield" target="_blank">スターフィールド</a> - 宇宙を舞台にした大冒険！</li>
+                    <li><a href="https://example.com/pokemon" target="_blank">ポケットモンスター
+                            スカーレット・バイオレット</a>
+                        -
+                        新たなポケモンの世界を探求しよう。
+                    </li>
+                    <li><a href="https://example.com/starfield" target="_blank">スターフィールド</a>
+                        - 宇宙を舞台にした大冒険！
+                    </li>
                 </ul>
             </article>
             <article>
@@ -433,7 +460,8 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
                 </p>
                 <section>
                     <h3>今だけ特別セール！</h3>
-                    <p>「魔法のレシピブック」を特別価格<small>（¥1,980）</small>で提供中！<small>（数量限定）</small></p>
+                    <p>「魔法のレシピブック」を特別価格<small>（¥1,980）</small>で提供中！<small>（数量限定）</small>
+                    </p>
                     <p>お支払いはクレジットカードのみです。<small>（手数料がかかる場合があります）</small></p>
                     <p>この本は<u>特許出願中</u>です。</p>
                     <button onclick="add_shop()">今すぐ購入！</button>
@@ -456,23 +484,29 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
             </article>
             <article>
                 <h2>変数について</h2>
-                <p>変数は、データを格納するための名前付きの場所です。プログラミングや数学において、変数は特定の値を保持し、それを操作するために使用されます。</p>
+                <p>変数は、データを格納するための名前付きの場所です。プログラミングや数学において、変数は特定の値を保持し、それを操作するために使用されます。
+                </p>
                 <p>例えば、数式 <var>x</var> + <var>y</var> = 10 において、<var>x</var> と
                     <var>y</var>は変数です。これらの変数には、任意の数値を代入することができます。
                 </p>
-                <p>例えば、次の文を考えてみましょう。<br>「方程式 <var>a</var> + <var>b</var> = <var>c</var> において、<var>a</var> と
+                <p>例えば、次の文を考えてみましょう。<br>「方程式 <var>a</var> + <var>b</var> = <var>c</var>
+                    において、<var>a</var>
+                    と
                     <var>b</var>の値が分かれば、<var>c</var> を計算できます。」
                 </p>
                 <p>他にも知りたいならここ！！<a href="https://example.com/chowakazyuku" target="_blank">超分か解説塾</a></p>
             </article>
             <article>
                 <h2>数列について</h2>
-                <p>数列とは、ある規則に従って並べられた数の集まりです。数学において、数列は特定の法則に基づき次の項を計算し、それを操作するために使用されます。</p>
+                <p>数列とは、ある規則に従って並べられた数の集まりです。数学において、数列は特定の法則に基づき次の項を計算し、それを操作するために使用されます。
+                </p>
                 <p>例えば、数列 <var>a<sub>n+1</sub></var> = <var>a<sub>n</sub></var> + <var>n<sup>2</sup></var>
                     では、各項が前の項とその項の番号 <var>n</var>
                     の2乗を足して得られます。</p>
-                <p>例えば、次のような数列を考えてみましょう。<br>「初項が1の数列で、次の項が前の項に項番号の2乗を足したもの」<br>この場合、最初の数値が <var>1</var> で、その次が <var>1 +
-                        1<sup>2</sup> = 2</var>、さらに次が <var>2 + 2<sup>2</sup> = 6</var> となります。</p>
+                <p>例えば、次のような数列を考えてみましょう。<br>「初項が1の数列で、次の項が前の項に項番号の2乗を足したもの」<br>この場合、最初の数値が
+                    <var>1</var> で、その次が <var>1 +
+                        1<sup>2</sup> = 2</var>、さらに次が <var>2 + 2<sup>2</sup> = 6</var> となります。
+                </p>
                 <p>数列の性質を理解することで、複雑な問題を解く手助けになります。</p>
                 <p>他にも知りたいならここ！！<a href="https://example.com/chowakazyuku" target="_blank">超分か解説塾</a></p>
             </article>
@@ -480,7 +514,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
                 <h2>中国語教室</h2>
                 <p>この2ヶ月の間で中国語をマスターしよう！</p>
                 <p>あの有名な李娜先生が教えてくれます。</p>
-                <p><ruby><u>李娜</u>先生在等待您的参加！<rt>李娜先生があなたの参加を待っています！</rt></ruby></p>
+                <p><ruby><u>李娜</u>老师期待您的参加！<rt>李娜先生があなたの参加を待っています！</rt></ruby></p>
                 <p><a href="https://example.com/chinese">参加はこちら</a></p>
             </article>
             <article>
@@ -496,13 +530,22 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
                 <p><bdo dir="rtl">この世界ではアラビア語以外の文字も逆になるよ。でも、た</bdo>まに戻ったりもす<bdo dir="rtl">るよ！</bdo></p>
                 <p>読めたかな？もっと<a href="https://example.com/bd-world">奥</a>まで行ってみよう</p>
             </article>
+            <article>
+                <h2>文章</h2>
+                <p>
+                    秋の夕暮れは、いつもどこか懐かしさを感じさせます。柔らかな風が木々の間を静かに吹き抜け、紅葉が一枚、また一枚と空中を舞いながら地面に降り積もっていきます。私は湖畔に腰を下ろし、ぼんやりと水面を眺めていました。空は次第にオレンジとピンクに染まり、まるで絵画のように美しく変わっていきます。遠くでは水鳥が泳いでおり、その姿が水面に映し出され、さざ波に揺れていました。その静けさの中で、ただ風の音や葉が落ちる音が響いています。こうして自然の中に身を置いていると、日常の忙しさが一瞬遠くに感じられ、自分自身を見つめ直す時間が生まれます。何も考えず、ただその瞬間を味わう――それがこの場所で得られる贅沢な時間なのです。
+                </p>
+            </article>
         </aside>
     </div>
     <footer>
-        <p>ページ内のタグをコピーするには、コピーしたいタグを <kbd><kbd><samp>クリック</samp></kbd> ⇒ <kbd><samp>コピー</samp></kbd></kbd> を選択して下さい。</p>
-        <p>切り取るには、切り取りたいタグを <kbd><kbd><samp>クリック</samp></kbd> ⇒ <kbd><samp>切り取り</samp></kbd></kbd> を選択して下さい。</p>
-        <p>貼り付けるには、貼り付けたいタグを <kbd><kbd><samp>クリック</samp></kbd> ⇒ <kbd><samp>貼り付け</samp></kbd></kbd> を選択して下さい。</p>
-        <p>&copy; <time datetime="2024-10-19">2024年10月19日</time> 中井拓人. All rights reserved.</p>
+        <p>ページ内のタグをコピーするには、コピーしたいタグを <kbd><kbd><samp>クリック</samp></kbd> ⇒
+                <kbd><samp>コピー</samp></kbd></kbd> を選択して下さい。</p>
+        <p>切り取るには、切り取りたいタグを <kbd><kbd><samp>クリック</samp></kbd> ⇒ <kbd><samp>切り取り</samp></kbd></kbd> を選択して下さい。
+        </p>
+        <p>貼り付けるには、貼り付けたいタグを <kbd><kbd><samp>クリック</samp></kbd> ⇒ <kbd><samp>貼り付け</samp></kbd></kbd> を選択して下さい。
+        </p>
+        <p>&copy; <time datetime="2024-10-19">2024年10月19日</time>中井拓人. All rights reserved.</p>
         <div id="social">
             <p>ソーシャルメディア:</p>
             <ul>

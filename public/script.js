@@ -150,3 +150,10 @@ fetch("public/script.js")
   .catch((error) => {
     console.error("Error fetching the script:", error);
   });
+
+const button = document.getElementById("resizeBtn");
+button.addEventListener("click", () => {
+  const w = document.getElementById("w").value;
+  const textParagraph = document.getElementById("resizerable-text");
+  textParagraph.style.width = `${w}em`; // 横幅を設定
+});
