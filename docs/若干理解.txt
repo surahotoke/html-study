@@ -67,3 +67,6 @@ br
 wbr
 ins
 del
+picture
+source
+img
