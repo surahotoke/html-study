@@ -1,4 +1,3 @@
-iframe
 embed
 object
 video
