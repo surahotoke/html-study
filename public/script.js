@@ -157,3 +157,10 @@ button.addEventListener("click", () => {
   const textParagraph = document.getElementById("resizerable-text");
   textParagraph.style.width = `${w}em`; // 横幅を設定
 });
+
+function changeColor() {
+  let svgObject = document.getElementById("mySvg");
+  let svgDoc = svgObject.contentDocument;
+  let element = svgDoc.getElementById("svgElementId");
+  element.style.fill = "pink";
+}

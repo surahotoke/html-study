@@ -26,32 +26,32 @@
     <header>
         <a href="public/index.html">
             <picture>
-                <source srcset="images/まと.png" media="(min-width: 1300px)">
-                <source srcset="images/大晦日.png" media="(min-width: 1231px)">
-                <source srcset="images/クリスマス.png" media="(min-width: 1225px)">
-                <source srcset="images/いい夫婦の日.png" media="(min-width: 1122px)">
-                <source srcset="images/ポッキーの日.png" media="(min-width: 1111px)">
-                <source srcset="images/犬の日.png" media="(min-width: 1101px)">
-                <source srcset="images/ハロウィン.png" media="(min-width: 1031px)">
-                <source srcset="images/衣替え10.png" media="(min-width: 1001px)">
-                <source srcset="images/シルバーウィーク.png" media="(min-width: 915px)">
-                <source srcset="images/防災の日.png" media="(min-width: 901px)">
-                <source srcset="images/山の日.png" media="(min-width: 811px)">
-                <source srcset="images/七夕.png" media="(min-width: 707px)">
-                <source srcset="images/衣替え6.png" media="(min-width: 601px)">
-                <source srcset="images/鯉のぼり.png" media="(min-width: 505px)">
-                <source srcset="images/ゴールデンウィーク.png" media="(min-width: 429px)">
-                <source srcset="images/エイプリルフール.png" media="(min-width: 401px)">
-                <source srcset="images/ホワイトデー.png" media="(min-width: 314px)">
-                <source srcset="images/ひな祭り.png" media="(min-width: 303px)">
-                <source srcset="images/猫の日.png" media="(min-width: 222px)">
-                <source srcset="images/バレンタイン.png" media="(min-width: 214px)">
-                <source srcset="images/節分.png" media="(min-width: 203px)">
-                <source srcset="images/鏡餅.png" media="(min-width: 111px)">
-                <source srcset="images/七種粥.png" media="(min-width: 107px)">
-                <source srcset="images/初詣.png" media="(min-width: 103px)">
-                <source srcset="images/初日の出.png" media="(min-width: 101px)">
-                <img src="images/まと.png" alt="ロゴ" height="60">
+                <source srcset="assets/images/まと.png" media="(min-width: 1300px)">
+                <source srcset="assets/images/大晦日.png" media="(min-width: 1231px)">
+                <source srcset="assets/images/クリスマス.png" media="(min-width: 1225px)">
+                <source srcset="assets/images/いい夫婦の日.png" media="(min-width: 1122px)">
+                <source srcset="assets/images/ポッキーの日.png" media="(min-width: 1111px)">
+                <source srcset="assets/images/犬の日.png" media="(min-width: 1101px)">
+                <source srcset="assets/images/ハロウィン.png" media="(min-width: 1031px)">
+                <source srcset="assets/images/衣替え10.png" media="(min-width: 1001px)">
+                <source srcset="assets/images/シルバーウィーク.png" media="(min-width: 915px)">
+                <source srcset="assets/images/防災の日.png" media="(min-width: 901px)">
+                <source srcset="assets/images/山の日.png" media="(min-width: 811px)">
+                <source srcset="assets/images/七夕.png" media="(min-width: 707px)">
+                <source srcset="assets/images/衣替え6.png" media="(min-width: 601px)">
+                <source srcset="assets/images/鯉のぼり.png" media="(min-width: 505px)">
+                <source srcset="assets/images/ゴールデンウィーク.png" media="(min-width: 429px)">
+                <source srcset="assets/images/エイプリルフール.png" media="(min-width: 401px)">
+                <source srcset="assets/images/ホワイトデー.png" media="(min-width: 314px)">
+                <source srcset="assets/images/ひな祭り.png" media="(min-width: 303px)">
+                <source srcset="assets/images/猫の日.png" media="(min-width: 222px)">
+                <source srcset="assets/images/バレンタイン.png" media="(min-width: 214px)">
+                <source srcset="assets/images/節分.png" media="(min-width: 203px)">
+                <source srcset="assets/images/鏡餅.png" media="(min-width: 111px)">
+                <source srcset="assets/images/七種粥.png" media="(min-width: 107px)">
+                <source srcset="assets/images/初詣.png" media="(min-width: 103px)">
+                <source srcset="assets/images/初日の出.png" media="(min-width: 101px)">
+                <img src="assets/images/まと.png" alt="ロゴ" height="60">
             </picture>
         </a>
         <nav>
@@ -448,6 +448,33 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
                 <h2>Scratchオセロ</h2>
                 <iframe src="https://scratch.mit.edu/projects/638297397/embed" allowtransparency="true" width="250"
                     height="235" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </article>
+            <article id="svgVideoAudio">
+                <h2>svgとwebmとmp3</h2>
+                <section>
+                    <h3>編集可能な画像svg</h3>
+                    <object id="mySvg" data="assets/images/a.svg" type="image/svg+xml"></object>
+                    <button onclick="changeColor()">色を変える</button>
+                </section>
+                <section>
+                    <h3>動画webm</h3>
+                    <video controls width="700">
+                        <source src="assets/videos/geogebra裏技.webm" type="video/webm">
+                        <track src="assets/captions/geogebra裏技.vtt" kind="subtitles" srclang="ja" label="日本語" default>
+                    </video>
+                </section>
+                <section>
+                    <h3>音声mp3</h3>
+                    <audio controls src="assets/audio/test_audio.mp3"></audio>
+                </section>
+            </article>
+            <article>
+                <img src="assets/images/map.svg" usemap="#image-map" alt="Image Map">
+                <map name="image-map">
+                    <area shape="rect" coords="34,44,270,350" alt="Link 1" href="https://www.example1.com">
+                    <area shape="circle" coords="450,200,50" alt="Link 2" href="https://www.example2.com">
+                    <area shape="poly" coords="300,100,400,200,300,300" alt="Link 3" href="https://www.example3.com">
+                </map>
             </article>
         </main>
         <aside>
