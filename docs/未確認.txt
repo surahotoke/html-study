@@ -1,13 +1,3 @@
-table
-caption
-colgroup
-col
-tbody
-thead
-tfoot
-tr
-td
-th
 form
 label
 input

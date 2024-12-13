@@ -1,0 +1,40 @@
+dialog {
+  width: 50vw;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+#modalHeader {
+  text-align: center;
+}
+#modalHeader h2 {
+  border: 3px solid black;
+  border-radius: 13px;
+  width: 50%;
+  background-color: wheat;
+  margin: 3% 25%;
+}
+#modalMainBox {
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 0 30px;
+  background-color: burlywood;
+}
+#modalMain {
+  overflow: scroll;
+  text-align: left;
+  height: 40vh;
+}
+#modalHooter {
+  text-align: center;
+}
+#closeModal {
+  border-radius: 2vw;
+  width: 8vw;
+  height: 4vw;
+  font-size: 1.5vw;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}

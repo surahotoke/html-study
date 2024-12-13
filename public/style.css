@@ -20,6 +20,7 @@ header {
   position: sticky;
   top: 0;
   display: flex;
+  z-index: 999;
 }
 nav {
   margin-left: auto;
@@ -149,4 +150,64 @@ ol {
 #resizerable-text {
   background-color: aquamarine;
   white-space: nowrap;
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
+dialog {
+  width: 50vw;
+  border-radius: 30px;
+}
+#modalHeader {
+  text-align: center;
+  margin: 0;
+}
+#modalMain {
+  overflow: scroll;
+  text-align: left;
+  height: 50vh;
+  background-color: burlywood;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+#modalHooter {
+  text-align: center;
+}
+#closeModal {
+  border-radius: 2vw;
+  width: 6vw;
+  height: 3vw;
+  font-size: 1vw;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: white;
+  border: 2px solid black;
+}
+
+caption {
+  padding: 5px;
+}
+
+th,
+td {
+  border: 1px solid darkgray;
+  padding: 8px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+th {
+  background-color: gainsboro;
+  font-weight: bold;
+}
+
+tfoot td {
+  background-color: lightgray;
 }

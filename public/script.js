@@ -4,7 +4,7 @@ let selectedText = ""; // コピーしたテキストを保存
 
 // クリックした要素を選択する関数
 document.querySelectorAll("*").forEach((element) => {
-  element.addEventListener("click", function (event) {
+  element.addEventListener("contextmenu", function (event) {
     if (
       event.target.closest("#context-menu") ||
       event.target.closest("header a")
@@ -163,4 +163,13 @@ function changeColor() {
   let svgDoc = svgObject.contentDocument;
   let element = svgDoc.getElementById("svgElementId");
   element.style.fill = "pink";
+}
+
+function showModal() {
+  const dialog = document.getElementById("dialog");
+  dialog.showModal();
+}
+function closeModal() {
+  const dialog = document.getElementById("dialog");
+  dialog.close();
 }
