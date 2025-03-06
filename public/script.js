@@ -173,3 +173,18 @@ function closeModal() {
   const dialog = document.getElementById("dialog");
   dialog.close();
 }
+
+customElements.define(
+  "original-element",
+  class extends HTMLElement {
+    constructor() {
+      super();
+      const template = document.getElementById(
+        "original-element-template"
+      ).content;
+      const shadowRoot = this.attachShadow({ mode: "open" }).appendChild(
+        template.cloneNode(true)
+      );
+    }
+  }
+);

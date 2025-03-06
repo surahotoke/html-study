@@ -102,3 +102,10 @@ progress
 meter
 fieldset
 legend
+details
+summary
+dialog
+script
+noscript
+template
+slot

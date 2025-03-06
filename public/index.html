@@ -119,6 +119,11 @@
             <button onclick="highlightTags()">検索</button>
         </search>
     </header>
+    <noscript>
+        <div style="background-color: yellow; color: red; text-align: center; padding: 10px;">
+            JavaScriptが無効になっています。このサイトのすべての機能を利用するには、JavaScriptを有効にしてください。
+        </div>
+    </noscript>
     <div class="container">
         <main>
             <h1>全HTMLタグ学習</h1>
@@ -1687,6 +1692,8 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
                 </p>
             </article>
             <article>
+                <h2>晩御飯選び</h2>
+                <p>以下のフォームから申し込もう！</p>
                 <form action="https://example.com/submit" method="get"
                     oninput="dino_result.value='スペシャル'+dino_food.value+' 第'+(parseInt(dino_time.value)-17)+'幕'">
                     <fieldset>
@@ -1725,6 +1732,46 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
                         <button type="submit">送信</button>
                     </fieldset>
                 </form>
+            </article>
+            <article>
+                <h2>ぴろーーーーん</h2>
+                <details>
+                    <summary>いろはに</summary>
+                    <details>
+                        <summary>ほへと</summary>
+                        <details>
+                            <summary>ちり</summary>
+                            <details>
+                                <summary>ぬるお</summary>
+                                続きは <a href="https://example.com">アプリ</a>をダウンロード
+                            </details>
+                        </details>
+                    </details>
+                </details>
+            </article>
+            <article>
+                <template id="original-element-template">
+                    <style>
+                        label {
+                            background-color: green;
+                        }
+                    </style>
+                    <label for="temp-input1">
+                        <slot name="a">入力の名前</slot> :
+                    </label>
+                    <input id="temp-input1" type="text"><br>
+                    <label for="temp-input2">
+                        <slot name="b">入力の名前</slot> :
+                    </label>
+                    <input id="temp-input2" type="text"><br>
+                    <label for="temp-input3">
+                        <slot name="c">入力の名前</slot> :
+                    </label>
+                    <input id="temp-input3" type="text"><br>
+                </template>
+                <original-element>
+                    <span slot="a">あっふー</span><span slot="b">ぴよぉ</span><span slot="c">ぐふぁ</span>
+                </original-element>
             </article>
         </aside>
     </div>

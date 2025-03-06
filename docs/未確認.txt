@@ -1,10 +1,3 @@
-details
-summary
-dialog
-script
-noscript
-template
-slot
 canvas
 svg
 math
