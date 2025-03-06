@@ -1686,6 +1686,46 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
                     秋の夕暮れは、いつもどこか懐かしさを感じさせます。柔らかな風が木々の間を静かに吹き抜け、紅葉が一枚、また一枚と空中を舞いながら地面に降り積もっていきます。私は湖畔に腰を下ろし、ぼんやりと水面を眺めていました。空は次第にオレンジとピンクに染まり、まるで絵画のように美しく変わっていきます。遠くでは水鳥が泳いでおり、その姿が水面に映し出され、さざ波に揺れていました。その静けさの中で、ただ風の音や葉が落ちる音が響いています。こうして自然の中に身を置いていると、日常の忙しさが一瞬遠くに感じられ、自分自身を見つめ直す時間が生まれます。何も考えず、ただその瞬間を味わう――それがこの場所で得られる贅沢な時間なのです。
                 </p>
             </article>
+            <article>
+                <form action="https://example.com/submit" method="get"
+                    oninput="dino_result.value='スペシャル'+dino_food.value+' 第'+(parseInt(dino_time.value)-17)+'幕'">
+                    <fieldset>
+                        <legend>晩御飯選び。</legend>
+                        <label for="popu">評価:</label>
+                        <meter id="popu" min="0" max="5" low="2" high="4" optimum="5" value="3.6"></meter><br>
+                        <label>
+                            アップロード:<progress value="70" max="100"></progress>
+                        </label><br>
+                        <label>
+                            くるくる:<progress></progress>
+                        </label><br>
+                        <label for="dino-select">夜ごはん:</label>
+                        <select name="dino_food" id="dino-select">
+                            <optgroup label="麵系">
+                                <option>そば</option>
+                                <option>うどん</option>
+                                <option>ラーメン</option>
+                            </optgroup>
+                            <optgroup label="ご飯系">
+                                <option>チャーハン</option>
+                                <option>赤飯</option>
+                                <option>白ご飯</option>
+                            </optgroup>
+                        </select><br>
+                        <label for="dino-time">希望時刻:</label>
+                        <input type="time" list="popularHours" name="dino_time" id="dino-time">
+                        <datalist id="popularHours">
+                            <option value="18:00"></option>
+                            <option value="19:00"></option>
+                            <option value="20:00"></option>
+                        </datalist><br>
+                        <label for="dino-option">備考：</label>
+                        <textarea name="dino_option" id="dino-option" rows="5" cols="33"></textarea><br>
+                        <output id="dino_result"></output>
+                        <button type="submit">送信</button>
+                    </fieldset>
+                </form>
+            </article>
         </aside>
     </div>
     <footer>
