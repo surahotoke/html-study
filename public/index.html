@@ -18,7 +18,6 @@
 </head>
 
 <body>
-    <button onclick="showModal()">aaaa</button>
     <dialog id="dialog">
         <h2 id="modalHeader">モーダル</h2>
         <div id="modalMain">
@@ -88,9 +87,11 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="public/index.html#ascii">ASCIIアート</a>
+                    <a href="public/index.html#art">アート</a>
                     <ul class="submenu">
                         <li><a href="public/index.html#pumpkin">パンプキン</a></li>
+                        <li><a href="public/index.html#x2">y=x^2のグラフ</a></li>
+                        <li><a href="public/index.html#trian-circle">三角形内接外接</a></li>
                     </ul>
                 </li>
                 <li><a href="public/index.html#meigen">名言・迷言集</a></li>
@@ -111,6 +112,9 @@
                 </li>
                 <li><a href="public/index.html#tateyomi">縦読み</a></li>
                 <li><a href="public/index.html#osero">普通のオセロ</a></li>
+                <li><a href="public/index.html#svgVideoAudio">動画とか</a></li>
+                <li><a href="public/index.html#unique-link">画像リンク</a></li>
+                <li><a href="public/index.html#table">数式の表</a></li>
             </ul>
         </nav>
         <search>
@@ -265,12 +269,8 @@
                     </section>
                 </section>
             </article>
-            <article id="ascii">
-                <h2><abbr title="American Standard Code for Information Interchange">ASCII</abbr>アート</h2>
-                <p><dfn>ASCIIアート</dfn>は、文字や記号だけを使って絵やデザインを作るアートのことだよ。パソコンのキーボードにある「<mark>ASCII（American
-                        Standard Codefor
-                        InformationInterchange）</mark>」っていう文字コードを使って表現されてるの。特に昔のコンピュータでは、<mark><i>グラフィックス</i></mark>を表示するのが難しかったから、文字だけでこういうアートを作ってたんだ。
-                </p>
+            <article id="art">
+                <h2>アート</h2>
                 <section id="pumpkin">
                     <h3>パンプキン</h3>
                     <figure>
@@ -306,6 +306,93 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
                             「私はハロウィンのシンボル、かぼちゃです！」というメッセージを伝えています。
                         </figcaption>
                     </figure>
+                    <h4><abbr title="American Standard Code for Information Interchange">ASCII</abbr>アート</h4>
+                    <p><dfn>ASCIIアート</dfn>は、文字や記号だけを使って絵やデザインを作るアートのことだよ。パソコンのキーボードにある「<mark>ASCII（American
+                            Standard Codefor
+                            InformationInterchange）</mark>」っていう文字コードを使って表現されてるの。特に昔のコンピュータでは、<mark><i>グラフィックス</i></mark>を表示するのが難しかったから、文字だけでこういうアートを作ってたんだ。
+                    </p>
+                </section>
+                <section id="x2">
+                    <h3>y=x^2</h3>
+                    <canvas id="graphCanvas" width="400" height="400"></canvas>
+
+                    <script>
+                        function drawGraph() {
+                            const canvas = document.getElementById('graphCanvas');
+                            const ctx = canvas.getContext('2d');
+
+                            // キャンバスの幅と高さ
+                            const width = canvas.width;
+                            const height = canvas.height;
+
+                            // 軸を描く
+                            ctx.strokeStyle = 'black';
+                            ctx.lineWidth = 1; // 軸の線の太さ
+                            // x 軸
+                            ctx.beginPath();
+                            ctx.moveTo(0, height / 2);
+                            ctx.lineTo(width, height / 2);
+                            // x 軸の矢印
+                            ctx.lineTo(width - 10, height / 2 - 5);
+                            ctx.moveTo(width, height / 2);
+                            ctx.lineTo(width - 10, height / 2 + 5);
+                            ctx.stroke();
+
+                            // y 軸
+                            ctx.beginPath();
+                            ctx.moveTo(width / 2, height);
+                            ctx.lineTo(width / 2, 0);
+                            // y 軸の矢印
+                            ctx.lineTo(width / 2 - 5, 10);
+                            ctx.moveTo(width / 2, 0);
+                            ctx.lineTo(width / 2 + 5, 10);
+                            ctx.stroke();
+
+                            // 二次関数 y = x^2 を描く
+                            ctx.strokeStyle = 'black';
+                            ctx.lineWidth = 5; // 関数の線の太さ
+                            ctx.beginPath();
+
+                            for (let x = -width / 2; x < width / 2; x += 0.1) {
+                                const y = -(x * x) / 100; // スケーリング
+                                if (x === -width / 2) {
+                                    ctx.moveTo(width / 2 + x, height / 2 + y);
+                                } else {
+                                    ctx.lineTo(width / 2 + x, height / 2 + y);
+                                }
+                            }
+                            ctx.stroke();
+
+                            // テキストラベルを描く
+                            ctx.fillStyle = 'black';
+                            ctx.font = '12px Arial';
+
+                            // 原点
+                            ctx.fillText('O', width / 2 - 15, height / 2 + 15);
+
+                            // x 軸と y 軸のラベル
+                            ctx.fillText('x', width - 15, height / 2 - 10);
+                            ctx.fillText('y', width / 2 + 10, 15);
+                        }
+
+                        drawGraph();
+                    </script>
+                    <h4>canvas</h4>
+                    <p>canvasにはなんでも書ける。そう。頑張れば3dゲームだって。ということでy=x^2のグラフを書いたよ。でもビットマップだから拡大すると荒いよ。</p>
+                </section>
+                <section id="trian-circle">
+                    <h3>三角形内接外接</h3>
+                    <svg width="400" height="400" style="border: 1px solid black; background-color:white;">
+                        <!-- 外接円 -->
+                        <circle cx="210" cy="170" r="152" stroke="blue" stroke-width="2" fill="none" />
+                        <!-- 内接円 -->
+                        <circle cx="210" cy="94" r="57" stroke="red" stroke-width="2" fill="none" />
+                        <!-- 三角形 -->
+                        <polygon points="118,49 266.3,28.8 269.36,309.93" fill="none" stroke="black" stroke-width="2" />
+                    </svg>
+                    <h4>svg</h4>
+                    <p>svgにもなんでも書ける。ということで三角形、内接円、外接円のグラフを書いたよ。svgだから拡大しても荒くないよ。</p>
+
                 </section>
             </article>
             <article id="meigen">
@@ -485,7 +572,8 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
                     <audio controls src="assets/audio/test_audio.mp3"></audio>
                 </section>
             </article>
-            <article>
+            <article id="unique-link">
+                <h2>図形リンク</h2>
                 <img src="assets/images/map.svg" usemap="#image-map" alt="Image Map">
                 <map name="image-map">
                     <area shape="rect" coords="34,44,270,350" alt="Link 1" href="https://www.example1.com">
@@ -494,6 +582,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
                 </map>
             </article>
             <article id="table">
+                <h2>数式の表</h2>
                 <table>
                     <caption>
                         表1　三角関数表
@@ -1798,6 +1887,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</pre>
             <p>中井 拓人</p>
             <p>Email: <a href="mailto:takutoyakke@gmail.com">takutoyakke@gmail.com</a></p>
         </address>
+        <button onclick="showModal()">モーダルボタン</button>
     </footer>
     <script src="public/script.js"></script>
 </body>

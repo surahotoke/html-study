@@ -109,3 +109,6 @@ script
 noscript
 template
 slot
+canvas
+svg
+math
